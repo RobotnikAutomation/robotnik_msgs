@@ -41,6 +41,7 @@ add_service_files(
 	enable_disable.srv
 	home.srv
 	axis_record.srv
+	set_float_value.srv
 )
 
 ## Generate added messages and services with any dependencies listed here

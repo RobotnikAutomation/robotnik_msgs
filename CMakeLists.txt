@@ -24,6 +24,7 @@ add_message_files(DIRECTORY msg
 	Alarms.msg
 	MotorStatus.msg
 	MotorsStatus.msg
+	State.msg
 )
 
 ## Generate services in the 'srv' folder

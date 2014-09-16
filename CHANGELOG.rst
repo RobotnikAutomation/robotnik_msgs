@@ -2,7 +2,7 @@
 Changelog for package robotnik_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
+0.1.0 (2014-08-06)
 -----------
 * Adding new service set_float_value.srv
 * Fixing dependencies problems

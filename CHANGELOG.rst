@@ -2,8 +2,8 @@
 Changelog for package robotnik_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.1 (2016-07-12)
+------------------
 * added MotorsStatusDifferential.msg
 * added BatteryStatus msg
 * Contributors: rguzman

@@ -2,6 +2,12 @@
 Changelog for package robotnik_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.2.1 (2016-07-12)
+------------------
+* added MotorsStatusDifferential.msg
+* added BatteryStatus msg
+* Contributors: rguzman
+
 0.2.0 (2015-07-17)
 -----------
 * Adding new field for the Axis.msg

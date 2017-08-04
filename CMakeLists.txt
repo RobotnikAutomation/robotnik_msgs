@@ -28,6 +28,7 @@ add_message_files(DIRECTORY msg
         BatteryStatus.msg
         MotorsStatusDifferential.msg
         InverterStatus.msg
+	RobotnikMotorsStatus.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -46,6 +47,7 @@ add_service_files(
 	home.srv
 	axis_record.srv
 	set_float_value.srv
+	SetMotorStatus.srv
 )
 
 ## Generate added messages and services with any dependencies listed here

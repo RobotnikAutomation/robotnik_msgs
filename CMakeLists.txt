@@ -19,15 +19,15 @@ add_message_files(DIRECTORY msg
 	ptz.msg
 	Data.msg
 	Interfaces.msg
-    Axis.msg
+        Axis.msg
 	AlarmSensor.msg
 	Alarms.msg
 	MotorStatus.msg
 	MotorsStatus.msg
 	State.msg
-    BatteryStatus.msg
-    MotorsStatusDifferential.msg
-    InverterStatus.msg
+        BatteryStatus.msg
+        MotorsStatusDifferential.msg
+        InverterStatus.msg
 )
 
 ## Generate services in the 'srv' folder

@@ -31,6 +31,8 @@ add_message_files(DIRECTORY msg
 	RobotnikMotorsStatus.msg
 	ElevatorAction.msg
 	ElevatorStatus.msg
+        alarmmonitor.msg
+        alarmsmonitor.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -51,6 +53,8 @@ add_service_files(
 	set_float_value.srv
 	SetMotorStatus.srv
 	SetElevator.srv
+        get_alarms.srv
+        ack_alarm.srv
 )
 
 ## Generate added messages and services with any dependencies listed here

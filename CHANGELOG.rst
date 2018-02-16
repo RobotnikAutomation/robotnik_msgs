@@ -2,8 +2,8 @@
 Changelog for package robotnik_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.2 (2018-02-16)
+------------------
 * added list of strings of active status word and flags
 * added set/get modbus register message
 * alarms msgs

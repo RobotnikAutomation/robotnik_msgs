@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>robotnik_msgs</name>
-  <version>0.2.1</version>
+  <version>0.2.2</version>
   <description>The robotnik_msgs package. Common messages and services used by some Robotnik's packages.</description>
 
   <maintainer email="rnavarro@robotnik.es">Román Navarro</maintainer>

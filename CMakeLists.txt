@@ -57,6 +57,7 @@ add_service_files(
         ack_alarm.srv
     set_modbus_register.srv
     get_modbus_register.srv
+    GetBool.srv
 )
 
 ## Generate added messages and services with any dependencies listed here

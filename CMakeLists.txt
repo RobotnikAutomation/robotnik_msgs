@@ -35,6 +35,7 @@ add_message_files(DIRECTORY msg
     alarmsmonitor.msg
 	named_inputs_outputs.msg
 	named_input_output.msg
+        StringArray.msg
 )
 
 ## Generate services in the 'srv' folder

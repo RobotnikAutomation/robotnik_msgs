@@ -33,7 +33,7 @@ add_message_files(DIRECTORY msg
 	ElevatorStatus.msg
         alarmmonitor.msg
         alarmsmonitor.msg
-	Kuka_pose.msg
+	Cartesian_Euler_pose.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -59,7 +59,7 @@ add_service_files(
     set_modbus_register.srv
     get_modbus_register.srv
     GetBool.srv
-	set_kuka_pose.srv
+	set_CartesianEuler_pose.srv
 )
 
 ## Generate added messages and services with any dependencies listed here

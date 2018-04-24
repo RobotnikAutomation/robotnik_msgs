@@ -19,21 +19,24 @@ add_message_files(DIRECTORY msg
 	ptz.msg
 	Data.msg
 	Interfaces.msg
-        Axis.msg
+    Axis.msg
 	AlarmSensor.msg
 	Alarms.msg
 	MotorStatus.msg
 	MotorsStatus.msg
 	State.msg
-        BatteryStatus.msg
-        MotorsStatusDifferential.msg
-        InverterStatus.msg
+    BatteryStatus.msg
+    MotorsStatusDifferential.msg
+    InverterStatus.msg
 	RobotnikMotorsStatus.msg
 	ElevatorAction.msg
 	ElevatorStatus.msg
-        alarmmonitor.msg
-        alarmsmonitor.msg
 	Cartesian_Euler_pose.msg
+    alarmmonitor.msg
+    alarmsmonitor.msg
+	named_inputs_outputs.msg
+	named_input_output.msg
+        StringArray.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -54,12 +57,13 @@ add_service_files(
 	set_float_value.srv
 	SetMotorStatus.srv
 	SetElevator.srv
-        get_alarms.srv
-        ack_alarm.srv
+    get_alarms.srv
+    ack_alarm.srv
     set_modbus_register.srv
     get_modbus_register.srv
     GetBool.srv
 	set_CartesianEuler_pose.srv
+	set_named_digital_output.srv
 )
 
 ## Generate added messages and services with any dependencies listed here

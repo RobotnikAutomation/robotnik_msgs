@@ -2,6 +2,23 @@
 Changelog for package robotnik_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.2.3 (2018-05-14)
+-----------
+* adding mantaineirs for the package
+* added SetElevator action
+* robotnik_msgs: completing alarms
+* removed set_kuka_pose.srv
+* Cartesian euler pose msg and srv added
+* robotnik_msgs: adding string array
+* Kuka pose msg and set kuka pose srv added
+* added set_named_input to CMakeLists
+* msg changed to digital_inputs and digital_outputs
+* Merge branch 'master' of https://github.com/RobotnikAutomation/robotnik_msgs
+* robotnik_msgs: alarms with display number
+* Added named_input_output msg and srv
+* added GetBool service
+* Contributors: Angel Soriano, David, RomanRobotnik, asoriano1, jmaparicio, jmapariciorobotnik, marbosjo
+
 0.2.2 (2018-02-16)
 ------------------
 * added list of strings of active status word and flags

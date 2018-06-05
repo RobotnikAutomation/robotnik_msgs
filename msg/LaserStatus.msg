@@ -1,0 +1,2 @@
+robotnik_msgs/LaserMode mode
+bool laser_ok

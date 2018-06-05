@@ -37,6 +37,9 @@ add_message_files(DIRECTORY msg
     named_inputs_outputs.msg
     named_input_output.msg
     StringArray.msg
+    LaserMode.msg
+    LaserStatus.msg
+    SafetyModuleStatus.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -64,6 +67,8 @@ add_service_files(
     GetBool.srv
     set_CartesianEuler_pose.srv
     set_named_digital_output.srv
+    SetLaserMode.srv
+
 )
 
 add_action_files(

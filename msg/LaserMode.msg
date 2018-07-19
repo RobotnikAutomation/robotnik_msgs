@@ -1,5 +1,6 @@
 string STANDARD=standard
-string DOCKING=docking
+string DOCKING_STATION=docking_station
 string CART=cart
+string DOCKING_CART=docking_cart
 
-string mode
+string name

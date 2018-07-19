@@ -1,8 +1,12 @@
-# robot mode
-string AUTO=auto
-string MANUAL=manual
+# robot security mode
+string HIGH=high
+string LOW=low
 string EMERGENCY=emergency
 
-string robot_mode
-robotnik_msgs/LaserStatus laser_status
-bool is_charging
+string security_mode
+bool charging
+bool lasers_ok
+bool emergency_stop
+bool security_disabled
+robotnik_msgs/LaserMode lasers_mode
+robotnik_msgs/LaserStatus[] lasers_status

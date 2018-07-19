@@ -1,2 +1,3 @@
-robotnik_msgs/LaserMode mode
-bool laser_ok
+string name
+bool detecting_obstacles
+bool contaminated

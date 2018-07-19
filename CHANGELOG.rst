@@ -2,6 +2,16 @@
 Changelog for package robotnik_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.2.4 (2018-07-16)
+------------------
+* LaserStatus: added free_warning flag
+* SafetyModuleStatus msg: added manual_realeas and bumper_override
+* Added SafetyModuleStatus and LaserStatus msg. Added SetLaserMode service
+* added time_charging to BatteryStatus.msg
+* added is_charging flag to BatteryStatus.msg
+* added averagecurrent and analog inputs to MotorStatus msg
+* Contributors: David, rguzman1, Álex
+
 0.2.3 (2018-05-14)
 -----------
 * adding mantaineirs for the package

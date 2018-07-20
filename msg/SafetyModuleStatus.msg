@@ -5,7 +5,6 @@ string EMERGENCY=emergency
 
 string security_mode
 bool charging
-bool lasers_ok
 bool emergency_stop
 bool security_disabled
 robotnik_msgs/LaserMode lasers_mode

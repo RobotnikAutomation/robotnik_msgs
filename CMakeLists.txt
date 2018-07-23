@@ -40,6 +40,10 @@ add_message_files(DIRECTORY msg
     LaserMode.msg
     LaserStatus.msg
     SafetyModuleStatus.msg
+    Zone.msg
+    ZoneArray.msg
+    ActiveZone.msg
+    ActiveZoneArray.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -88,6 +92,7 @@ catkin_package(CATKIN_DEPENDS
   actionlib_msgs
   message_runtime
   std_msgs
+  geometry_msgs
 )
 
 

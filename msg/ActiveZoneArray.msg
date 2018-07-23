@@ -1,1 +1,0 @@
-ActiveZone[] zones

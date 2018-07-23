@@ -40,10 +40,6 @@ add_message_files(DIRECTORY msg
     LaserMode.msg
     LaserStatus.msg
     SafetyModuleStatus.msg
-    Zone.msg
-    ZoneArray.msg
-    ActiveZone.msg
-    ActiveZoneArray.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -72,7 +68,6 @@ add_service_files(
     set_CartesianEuler_pose.srv
     set_named_digital_output.srv
     SetLaserMode.srv
-
 )
 
 add_action_files(
@@ -92,7 +87,6 @@ catkin_package(CATKIN_DEPENDS
   actionlib_msgs
   message_runtime
   std_msgs
-  geometry_msgs
 )
 
 

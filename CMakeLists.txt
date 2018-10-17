@@ -40,6 +40,7 @@ add_message_files(DIRECTORY msg
     LaserMode.msg
     LaserStatus.msg
     SafetyModuleStatus.msg
+    SubState.msg
 )
 
 ## Generate services in the 'srv' folder

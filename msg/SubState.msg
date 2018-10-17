@@ -5,3 +5,6 @@ int32 substate
 
 # Description of the substate
 string substate_description
+
+# Text message - additional status information
+string msg

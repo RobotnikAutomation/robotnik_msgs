@@ -13,7 +13,7 @@ Changelog for package robotnik_msgs
 * Contributors: David, rguzman1, Álex
 
 0.2.3 (2018-05-14)
------------
+------------------
 * adding mantaineirs for the package
 * added SetElevator action
 * completing alarms
@@ -46,14 +46,14 @@ Changelog for package robotnik_msgs
 * Contributors: rguzman
 
 0.2.0 (2015-07-17)
------------
+------------------
 * Adding new field for the Axis.msg
 * Adding msg State.msg
 * Adding new msg State
 
 
 0.1.0 (2014-08-06)
------------
+------------------
 * Adding new service set_float_value.srv
 * Fixing dependencies problems
 * Adding initial list of messages and services

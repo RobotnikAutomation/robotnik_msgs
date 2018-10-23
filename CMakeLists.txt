@@ -69,6 +69,7 @@ add_service_files(
     set_CartesianEuler_pose.srv
     set_named_digital_output.srv
     SetLaserMode.srv
+    ResetFromSubState.srv
 )
 
 add_action_files(

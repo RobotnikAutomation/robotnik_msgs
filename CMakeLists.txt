@@ -26,6 +26,7 @@ add_message_files(DIRECTORY msg
     MotorsStatus.msg
     State.msg
     BatteryStatus.msg
+    BatteryStatusStamped.msg
     MotorsStatusDifferential.msg
     InverterStatus.msg
     RobotnikMotorsStatus.msg
@@ -41,6 +42,7 @@ add_message_files(DIRECTORY msg
     LaserStatus.msg
     SafetyModuleStatus.msg
     SubState.msg
+    BatteryDockingStatus.msg
 )
 
 ## Generate services in the 'srv' folder

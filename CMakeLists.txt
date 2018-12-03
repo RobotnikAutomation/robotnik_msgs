@@ -44,6 +44,7 @@ add_message_files(DIRECTORY msg
     SubState.msg
     BatteryDockingStatus.msg
     BatteryDockingStatusStamped.msg
+    BoolArray.msg
 )
 
 ## Generate services in the 'srv' folder

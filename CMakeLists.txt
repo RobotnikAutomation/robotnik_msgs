@@ -74,6 +74,7 @@ add_service_files(
     set_named_digital_output.srv
     SetLaserMode.srv
     ResetFromSubState.srv
+    SetNamedDigitalOutput.srv
 )
 
 add_action_files(

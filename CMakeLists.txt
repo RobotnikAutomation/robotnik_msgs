@@ -37,6 +37,8 @@ add_message_files(DIRECTORY msg
     alarmsmonitor.msg
     named_inputs_outputs.msg
     named_input_output.msg
+    Register.msg
+    Registers.msg
     StringArray.msg
     LaserMode.msg
     LaserStatus.msg

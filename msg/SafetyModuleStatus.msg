@@ -8,5 +8,6 @@ bool charging
 bool emergency_stop   # if e-stop is pressed
 bool safety_stop      # if system is stopped due to safety system
 bool safety_overrided # if safety system is overrided
+bool lasers_on_standby # if lasers don't have power
 robotnik_msgs/LaserMode lasers_mode
 robotnik_msgs/LaserStatus[] lasers_status

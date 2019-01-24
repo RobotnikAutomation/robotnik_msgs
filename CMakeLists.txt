@@ -26,6 +26,7 @@ add_message_files(DIRECTORY msg
     MotorsStatus.msg
     State.msg
     BatteryStatus.msg
+    BatteryStatusStamped.msg
     MotorsStatusDifferential.msg
     InverterStatus.msg
     RobotnikMotorsStatus.msg
@@ -36,12 +37,17 @@ add_message_files(DIRECTORY msg
     alarmsmonitor.msg
     named_inputs_outputs.msg
     named_input_output.msg
+    Register.msg
+    Registers.msg
     StringArray.msg
     LaserMode.msg
     LaserStatus.msg
     SafetyModuleStatus.msg
     SubState.msg
     QueryAlarm.msg
+    BatteryDockingStatus.msg
+    BatteryDockingStatusStamped.msg
+    BoolArray.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -72,7 +78,7 @@ add_service_files(
     SetLaserMode.srv
     ResetFromSubState.srv
     QueryAlarms.srv
-)
+    SetNamedDigitalOutput.srv
 
 add_action_files(
     FILES

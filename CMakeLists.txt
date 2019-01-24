@@ -41,6 +41,7 @@ add_message_files(DIRECTORY msg
     LaserStatus.msg
     SafetyModuleStatus.msg
     SubState.msg
+    QueryAlarm.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -70,6 +71,7 @@ add_service_files(
     set_named_digital_output.srv
     SetLaserMode.srv
     ResetFromSubState.srv
+    QueryAlarms.srv
 )
 
 add_action_files(

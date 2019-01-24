@@ -79,6 +79,7 @@ add_service_files(
     ResetFromSubState.srv
     QueryAlarms.srv
     SetNamedDigitalOutput.srv
+    InsertTask.srv
 )
 
 add_action_files(

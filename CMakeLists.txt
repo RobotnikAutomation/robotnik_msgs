@@ -44,6 +44,7 @@ add_message_files(DIRECTORY msg
     LaserStatus.msg
     SafetyModuleStatus.msg
     SubState.msg
+    QueryAlarm.msg
     BatteryDockingStatus.msg
     BatteryDockingStatusStamped.msg
     BoolArray.msg
@@ -77,7 +78,9 @@ add_service_files(
     set_named_digital_output.srv
     SetLaserMode.srv
     ResetFromSubState.srv
+    QueryAlarms.srv
     SetNamedDigitalOutput.srv
+    InsertTask.srv
 )
 
 add_action_files(

@@ -2,6 +2,28 @@
 Changelog for package robotnik_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.2.5 (2019-01-24)
+------------------
+* add srv and msg to query alarms
+* Create Register msg for Modbus communication
+* Add SetNamedDigitalOutput srv
+* Adding message for an array of Booleans
+* Adding flag lasers_on_standby into SafetyModuleStatus
+* Adding BatteryDockingStatus stamped
+* setting format of battery status stamped in the correct way
+* Adding new messages for battery docking status and battery status stamped
+* updated safety msgs
+* Added srv ResetFromSubState
+* added SubState.msg
+* correcting changelog format
+* zones msgs are now in their own package
+* Added robotnik_navigation_tools msgs
+* Removed lasers ok field
+* Update LaserStatus.msg
+* Update SafetyModuleStatus.msg
+* Added new fields to SafetyModuleStatus
+* Added new fields to SafetyModuleStatus
+
 0.2.4 (2018-07-16)
 ------------------
 * LaserStatus: added free_warning flag

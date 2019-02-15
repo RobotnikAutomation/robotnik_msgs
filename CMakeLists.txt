@@ -4,7 +4,7 @@ project(robotnik_msgs)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED COMPONENTS actionlib_msgs std_msgs geometry_msgs message_generation)
+find_package(catkin REQUIRED COMPONENTS actionlib_msgs std_msgs message_generation)
 
 
 #######################################
@@ -48,6 +48,7 @@ add_message_files(DIRECTORY msg
     BatteryDockingStatus.msg
     BatteryDockingStatusStamped.msg
     BoolArray.msg
+    MotorPID.msg
     Pose2DArray.msg
 )
 
@@ -81,6 +82,8 @@ add_service_files(
     QueryAlarms.srv
     SetNamedDigitalOutput.srv
     InsertTask.srv
+    SetMotorPID.srv
+    SetMotorMode.srv
 )
 
 add_action_files(

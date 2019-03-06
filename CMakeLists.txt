@@ -50,6 +50,7 @@ add_message_files(DIRECTORY msg
     BoolArray.msg
     MotorPID.msg
     Pose2DArray.msg
+    Pose2DStamped.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -106,5 +107,3 @@ catkin_package(CATKIN_DEPENDS
   std_msgs
   geometry_msgs
 )
-
-

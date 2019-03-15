@@ -13,3 +13,4 @@ string UNKNOWN=unknown
 string state
 # UP, DOWN, UNKNOWN
 string position
+float32 height

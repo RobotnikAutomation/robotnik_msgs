@@ -48,7 +48,9 @@ add_message_files(DIRECTORY msg
     BatteryDockingStatus.msg
     BatteryDockingStatusStamped.msg
     BoolArray.msg
+    MotorPID.msg
     Pose2DArray.msg
+    Pose2DStamped.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -81,6 +83,8 @@ add_service_files(
     QueryAlarms.srv
     SetNamedDigitalOutput.srv
     InsertTask.srv
+    SetMotorPID.srv
+    SetMotorMode.srv
 )
 
 add_action_files(
@@ -103,5 +107,3 @@ catkin_package(CATKIN_DEPENDS
   std_msgs
   geometry_msgs
 )
-
-

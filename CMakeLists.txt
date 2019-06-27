@@ -85,6 +85,7 @@ add_service_files(
     InsertTask.srv
     SetMotorPID.srv
     SetMotorMode.srv
+    SetBuzzer.srv
 )
 
 add_action_files(

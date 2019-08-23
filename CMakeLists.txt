@@ -27,6 +27,7 @@ add_message_files(DIRECTORY msg
     State.msg
     BatteryStatus.msg
     BatteryStatusStamped.msg
+    MotorHeadingOffset.msg
     MotorsStatusDifferential.msg
     InverterStatus.msg
     RobotnikMotorsStatus.msg
@@ -86,6 +87,8 @@ add_service_files(
     SetMotorPID.srv
     SetMotorMode.srv
     SetBuzzer.srv
+    SetEncoderTurns.srv
+    GetMotorsHeadingOffset.srv
 )
 
 add_action_files(

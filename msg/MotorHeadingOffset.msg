@@ -1,2 +1,2 @@
 int32 motor
-int32 value
+float64 value

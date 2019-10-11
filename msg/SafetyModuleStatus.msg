@@ -2,6 +2,7 @@
 string SAFE=safe
 string OVERRIDABLE=overridable
 string EMERGENCY=emergency
+string LASER_MUTE=laser_mute
 
 string safety_mode
 bool charging

@@ -10,6 +10,5 @@ string MODE_MANUAL_SW=manual_sw
 
 string operation_mode
 	
-float32 battery_current		# current flow in Amperes
 bool contact_relay_status	# shows if there's contact with the charger
 bool charger_relay_status   # shows if the relay for the charge is active or not

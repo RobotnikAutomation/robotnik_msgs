@@ -2,6 +2,11 @@
 Changelog for package robotnik_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.1.0 (2020-06-15)
+------------------
+* Add PresenceSensor and PresenceSensorArray msg
+* Add SetTransform srv
+* Add ReturnMessage msg
 
 1.0.0 (2019-11-05)
 ------------------

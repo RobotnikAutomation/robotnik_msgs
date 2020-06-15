@@ -53,6 +53,8 @@ add_message_files(DIRECTORY msg
     Pose2DArray.msg
     Pose2DStamped.msg
     ReturnMessage.msg
+    PresenceSensor.msg
+    PresenceSensorArray.msg
 )
 
 ## Generate services in the 'srv' folder

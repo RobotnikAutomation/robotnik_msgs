@@ -93,6 +93,7 @@ add_service_files(
     SetEncoderTurns.srv
     GetMotorsHeadingOffset.srv
     SetByte.srv
+    SetTransform.srv
 )
 
 add_action_files(

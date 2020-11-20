@@ -94,6 +94,7 @@ add_service_files(
     SetBuzzer.srv
     SetEncoderTurns.srv
     GetMotorsHeadingOffset.srv
+    GetPOI.srv
     SetByte.srv
     SetTransform.srv
 )

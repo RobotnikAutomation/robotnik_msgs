@@ -48,6 +48,7 @@ add_message_files(DIRECTORY msg
     LaserMode.msg
     LaserStatus.msg
     SafetyModuleStatus.msg
+    StringStamped.msg
     SubState.msg
     QueryAlarm.msg
     BatteryDockingStatus.msg

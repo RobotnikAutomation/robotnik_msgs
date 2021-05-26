@@ -37,6 +37,8 @@ add_message_files(DIRECTORY msg
     RobotnikMotorsStatus.msg
     ElevatorAction.msg
     ElevatorStatus.msg
+    PantiltStatus.msg
+    PantiltStatusStamped.msg
     Cartesian_Euler_pose.msg
     alarmmonitor.msg
     alarmsmonitor.msg

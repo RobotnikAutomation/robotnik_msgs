@@ -100,6 +100,8 @@ add_service_files(
     SetEncoderTurns.srv
     GetMotorsHeadingOffset.srv
     GetPOI.srv
+    SetString.srv
+    GetPTZ.srv
     SetByte.srv
     SetTransform.srv
 )

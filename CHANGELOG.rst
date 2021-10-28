@@ -2,6 +2,19 @@
 Changelog for package robotnik_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.2.0 (2021-10-28)
+------------------
+- Add mode parameter to ptz msg and srv (Robert Vasquez Zavaleta)([debb5e4](https://github.com/RobotnikAutomation/robotnik_msgs/commit/debb5e4))
+- Add new defined laser_mode (RomanRobotnik)([d4c1c1d](https://github.com/RobotnikAutomation/robotnik_msgs/commit/d4c1c1d))
+- Add PantiltStatus msg (jgomezRobotnik)([07f3dd1](https://github.com/RobotnikAutomation/robotnik_msgs/commit/07f3dd1))
+- Add SetString service (Robert Vasquez Zavaleta)([252bb38](https://github.com/RobotnikAutomation/robotnik_msgs/commit/252bb38))
+- Add GetPTZ service (Robert Vasquez Zavaleta)([0eef834](https://github.com/RobotnikAutomation/robotnik_msgs/commit/0eef834))
+- Add StringStamped msg (jgomezRobotnik)([678f188](https://github.com/RobotnikAutomation/robotnik_msgs/commit/678f188))
+- Add OdomManualCalibrationStatus msg (jgomezRobotnik)([93899af](https://github.com/RobotnikAutomation/robotnik_msgs/commit/93899af))
+- Add GetPoi service (Álex)([bf3e999](https://github.com/RobotnikAutomation/robotnik_msgs/commit/bf3e999))
+- Update on OdomCalibrationStatus msg (jgomezRobotnik)([1d0e48e](https://github.com/RobotnikAutomation/robotnik_msgs/commit/1d0e48e))
+- Add OdomCalibrationStatus msg (jgomezRobotnik)([e3eb3ee](https://github.com/RobotnikAutomation/robotnik_msgs/commit/e3eb3ee))
+
 1.1.0 (2020-06-15)
 ------------------
 * Add PresenceSensor and PresenceSensorArray msg

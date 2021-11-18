@@ -57,6 +57,7 @@ add_message_files(DIRECTORY msg
     BatteryDockingStatusStamped.msg
     BoolArray.msg
     MotorPID.msg
+    MotorCurrent.msg
     Pose2DArray.msg
     Pose2DStamped.msg
     ReturnMessage.msg
@@ -103,6 +104,7 @@ add_service_files(
     SetString.srv
     GetPTZ.srv
     SetByte.srv
+    SetCurrent.srv
     SetTransform.srv
 )
 

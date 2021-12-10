@@ -25,6 +25,7 @@ add_message_files(DIRECTORY msg
     MotorStatus.msg
     MotorsStatus.msg
     State.msg
+    ArmStatus.msg
     BatteryStatus.msg
     BatteryStatusStamped.msg
     OdomCalibrationStatus.msg

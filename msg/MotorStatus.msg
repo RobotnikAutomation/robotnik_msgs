@@ -6,9 +6,9 @@ string communicationstatus
 string mode_of_operation
 string[] activestatusword
 string[] activedriveflags
-int32 digitaloutputs
-int32 digitalinputs
-float32 averagecurrent
+bool[] digitaloutputs
+bool[] digitalinputs
+float32 current
 float32[] analoginputs
 string statusword
 string driveflags

@@ -105,6 +105,7 @@ add_service_files(
     GetMotorsHeadingOffset.srv
     GetPOI.srv
     SetString.srv
+    SetInt16.srv
     GetPTZ.srv
     SetByte.srv
     SetCurrent.srv

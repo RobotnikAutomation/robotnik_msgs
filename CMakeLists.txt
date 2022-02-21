@@ -64,6 +64,8 @@ add_message_files(DIRECTORY msg
     ReturnMessage.msg
     PresenceSensor.msg
     PresenceSensorArray.msg
+    WatchdogStatus.msg
+    WatchdogStatusArray.msg
 )
 
 ## Generate services in the 'srv' folder

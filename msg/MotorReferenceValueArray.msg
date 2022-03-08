@@ -1,0 +1,3 @@
+MotorReferenceValue velocity
+MotorReferenceValue position
+MotorReferenceValue torque

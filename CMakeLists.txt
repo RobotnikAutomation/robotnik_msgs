@@ -1,136 +1,128 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5)
+
 project(robotnik_msgs)
 
-## Find catkin macros and libraries
-## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
-## is used, also find other catkin packages
-find_package(catkin REQUIRED COMPONENTS actionlib_msgs std_msgs geometry_msgs message_generation)
+# Default C++17
+if(NOT CMAKE_CXX_STANDARD)
+  set(CMAKE_CXX_STANDARD 17)
+endif()
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
 
+find_package(ament_cmake REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
 
-#######################################
-## Declare ROS messages and services ##
-#######################################
+set(msg_files
+  "msg/alarmmonitor.msg"
+  "msg/AlarmSensor.msg"
+  "msg/alarmsmonitor.msg"
+  "msg/Alarms.msg"
+  "msg/ArmStatus.msg"
+  "msg/Axis.msg"
+  "msg/BatteryDockingStatus.msg"
+  "msg/BatteryDockingStatusStamped.msg"
+  "msg/BatteryStatus.msg"
+  "msg/BatteryStatusStamped.msg"
+  "msg/BoolArray.msg"
+  "msg/Cartesian_Euler_pose.msg"
+  "msg/Data.msg"
+  "msg/ElevatorAction.msg"
+  "msg/ElevatorStatus.msg"
+  "msg/encoders.msg"
+  "msg/inputs_outputs.msg"
+  "msg/Interfaces.msg"
+  "msg/InverterStatus.msg"
+  "msg/LaserMode.msg"
+  "msg/LaserStatus.msg"
+  "msg/MotorCurrent.msg"
+  "msg/MotorHeadingOffset.msg"
+  "msg/MotorPID.msg"
+  "msg/MotorReferenceValueArray.msg"
+  "msg/MotorReferenceValue.msg"
+  "msg/MotorsStatusDifferential.msg"
+  "msg/MotorsStatus.msg"
+  "msg/MotorStatus.msg"
+  "msg/named_input_output.msg"
+  "msg/named_inputs_outputs.msg"
+  "msg/OdomCalibrationStatus.msg"
+  "msg/OdomCalibrationStatusStamped.msg"
+  "msg/OdomManualCalibrationStatus.msg"
+  "msg/OdomManualCalibrationStatusStamped.msg"
+  "msg/PantiltStatus.msg"
+  "msg/PantiltStatusStamped.msg"
+  "msg/Pose2DArray.msg"
+  "msg/Pose2DStamped.msg"
+  "msg/PresenceSensorArray.msg"
+  "msg/PresenceSensor.msg"
+  "msg/ptz.msg"
+  "msg/QueryAlarm.msg"
+  "msg/Register.msg"
+  "msg/Registers.msg"
+  "msg/ReturnMessage.msg"
+  "msg/RobotnikMotorsStatus.msg"
+  "msg/SafetyModuleStatus.msg"
+  "msg/State.msg"
+  "msg/StringArray.msg"
+  "msg/StringStamped.msg"
+  "msg/SubState.msg"
+  "msg/WatchdogStatusArray.msg"
+  "msg/WatchdogStatus.msg")
 
-## Generate messages in the 'msg' folder
-add_message_files(DIRECTORY msg
-    FILES
-    encoders.msg
-    inputs_outputs.msg
-    ptz.msg
-    Data.msg
-    Interfaces.msg
-    Axis.msg
-    AlarmSensor.msg
-    Alarms.msg
-    MotorStatus.msg
-    MotorsStatus.msg
-    State.msg
-    ArmStatus.msg
-    BatteryStatus.msg
-    BatteryStatusStamped.msg
-    OdomCalibrationStatus.msg
-    OdomCalibrationStatusStamped.msg
-    OdomManualCalibrationStatus.msg
-    OdomManualCalibrationStatusStamped.msg
-    MotorHeadingOffset.msg
-    MotorsStatusDifferential.msg
-    InverterStatus.msg
-    RobotnikMotorsStatus.msg
-    ElevatorAction.msg
-    ElevatorStatus.msg
-    PantiltStatus.msg
-    PantiltStatusStamped.msg
-    Cartesian_Euler_pose.msg
-    alarmmonitor.msg
-    alarmsmonitor.msg
-    named_inputs_outputs.msg
-    named_input_output.msg
-    Register.msg
-    Registers.msg
-    StringArray.msg
-    LaserMode.msg
-    LaserStatus.msg
-    SafetyModuleStatus.msg
-    StringStamped.msg
-    SubState.msg
-    QueryAlarm.msg
-    BatteryDockingStatus.msg
-    BatteryDockingStatusStamped.msg
-    BoolArray.msg
-    MotorPID.msg
-    MotorCurrent.msg
-    Pose2DArray.msg
-    Pose2DStamped.msg
-    ReturnMessage.msg
-    PresenceSensor.msg
-    PresenceSensorArray.msg
-    WatchdogStatus.msg
-    WatchdogStatusArray.msg
-    MotorReferenceValue.msg
-    MotorReferenceValueArray.msg
+set(srv_files
+  "srv/get_digital_input.srv"
+  "srv/set_analog_output.srv"
+  "srv/set_mode.srv"
+  "srv/set_ptz.srv"
+  "srv/get_mode.srv"
+  "srv/set_digital_output.srv"
+  "srv/set_odometry.srv"
+  "srv/set_height.srv"
+  "srv/enable_disable.srv"
+  "srv/home.srv"
+  "srv/axis_record.srv"
+  "srv/set_float_value.srv"
+  "srv/SetMotorStatus.srv"
+  "srv/SetElevator.srv"
+  "srv/get_alarms.srv"
+  "srv/ack_alarm.srv"
+  "srv/set_modbus_register.srv"
+  "srv/get_modbus_register.srv"
+  "srv/GetBool.srv"
+  "srv/set_CartesianEuler_pose.srv"
+  "srv/set_named_digital_output.srv"
+  "srv/SetLaserMode.srv"
+  "srv/ResetFromSubState.srv"
+  "srv/QueryAlarms.srv"
+  "srv/SetNamedDigitalOutput.srv"
+  "srv/InsertTask.srv"
+  "srv/SetMotorPID.srv"
+  "srv/SetMotorMode.srv"
+  "srv/SetBuzzer.srv"
+  "srv/SetEncoderTurns.srv"
+  "srv/GetMotorsHeadingOffset.srv"
+  "srv/GetPOI.srv"
+  "srv/SetString.srv"
+  "srv/SetInt16.srv"
+  "srv/GetPTZ.srv"
+  "srv/SetByte.srv"
+  "srv/SetCurrent.srv"
+  "srv/SetTransform.srv")
+
+set(action_files
+  "action/SetElevator.action")
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  ${msg_files}
+  ${srv_files}
+  ${action_files}
+  DEPENDENCIES
+    std_msgs
+    geometry_msgs
+  ADD_LINTER_TESTS
 )
 
-## Generate services in the 'srv' folder
-add_service_files(
-    DIRECTORY srv
-    FILES
-    get_digital_input.srv
-    set_analog_output.srv
-    set_mode.srv
-    set_ptz.srv
-    get_mode.srv
-    set_digital_output.srv
-    set_odometry.srv
-    set_height.srv
-    enable_disable.srv
-    home.srv
-    axis_record.srv
-    set_float_value.srv
-    SetMotorStatus.srv
-    SetElevator.srv
-    get_alarms.srv
-    ack_alarm.srv
-    set_modbus_register.srv
-    get_modbus_register.srv
-    GetBool.srv
-    set_CartesianEuler_pose.srv
-    set_named_digital_output.srv
-    SetLaserMode.srv
-    ResetFromSubState.srv
-    QueryAlarms.srv
-    SetNamedDigitalOutput.srv
-    InsertTask.srv
-    SetMotorPID.srv
-    SetMotorMode.srv
-    SetBuzzer.srv
-    SetEncoderTurns.srv
-    GetMotorsHeadingOffset.srv
-    GetPOI.srv
-    SetString.srv
-    SetInt16.srv
-    GetPTZ.srv
-    SetByte.srv
-    SetCurrent.srv
-    SetTransform.srv
-)
+ament_export_dependencies(rosidl_default_runtime)
 
-add_action_files(
-    FILES
-    SetElevator.action
-)
-
-
-## Generate added messages and services with any dependencies listed here
-generate_messages(
-DEPENDENCIES
-   actionlib_msgs
-   std_msgs  # Or other packages containing msgs
-   geometry_msgs
-)
-
-catkin_package(CATKIN_DEPENDS
-  actionlib_msgs
-  message_runtime
-  std_msgs
-  geometry_msgs
-)
+ament_package()

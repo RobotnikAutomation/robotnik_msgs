@@ -1,4 +1,0 @@
-float32 pan_pos
-float32 tilt_pos
-float32 pan_speed
-float32 tilt_speed

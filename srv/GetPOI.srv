@@ -1,4 +1,0 @@
-string name
----
-bool success
-geometry_msgs/Pose2D pose

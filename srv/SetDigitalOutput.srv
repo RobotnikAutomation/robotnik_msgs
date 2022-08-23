@@ -2,10 +2,7 @@
 uint8 DISCARD = 0
 uint8 SET_VALUE = 1
 uint8 SET_LOGIC = 2
-uint8 SET_MODE = 3
-uint8 SET_VALUE_LOGIC = 4
-uint8 SET_VALUE_MODE = 5
-uint8 SET_LOGIC_MODE = 6
+uint8 SET_VALUE_LOGIC = 3
 
 # Values for output
 bool LOW = false
@@ -15,17 +12,9 @@ bool HIGH = true
 bool NEGATIVE = false
 bool POSITIVE = true
 
-# Modes
-uint8 PUSH_PULL = 0
-uint8 PUSH_PULL_PULL_UP = 1
-uint8 PUSH_PULL_PULL_DOWN = 2
-uint8 OPEN_DRAIN = 3
-uint8 OPEN_DRAIN_PULL_UP = 4
-uint8 OPEN_DRAIN_PULL_DOWN = 5
 
 uint8[] mask
 bool[] value
 bool[] logic
-uint8[] mode
 ---
-bool ret
+ReturnMessage ret

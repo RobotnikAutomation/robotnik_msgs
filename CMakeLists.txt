@@ -31,6 +31,7 @@ set(msg_files
 
 set(srv_files
   "srv/SetDigitalOutput.srv"
+  "srv/SetDigitalOutputWithMask.srv"
   "srv/SetMotorStatus.srv"
   "srv/SetMotorPID.srv"
   "srv/SetString.srv"

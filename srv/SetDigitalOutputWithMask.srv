@@ -1,0 +1,20 @@
+# Values for mask
+uint8 DISCARD = 0
+uint8 SET_VALUE = 1
+uint8 SET_LOGIC = 2
+uint8 SET_VALUE_LOGIC = 3
+
+# Values for output
+bool LOW = false
+bool HIGH = true
+
+# Values for logic
+bool NEGATIVE = false
+bool POSITIVE = true
+
+
+uint8[] mask
+bool[] value
+bool[] logic
+---
+ReturnMessage ret

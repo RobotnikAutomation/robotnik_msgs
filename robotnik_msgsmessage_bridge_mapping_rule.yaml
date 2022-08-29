@@ -1,0 +1,13 @@
+# This file defines mappings between ROS 1 and ROS 2 interfaces.
+# It is used with the ros1_bridge to allow for communcation between ROS 1 and ROS 2.
+
+-
+  ros1_package_name: 'robotnik_msgs'
+  ros1_message_name: 'inputs_outputs'
+  ros2_package_name: 'robotnik_msgs'
+  ros2_message_name: 'InputsOutputs'
+-
+  ros1_package_name: 'robotnik_msgs'
+  ros1_service_name: 'set_digital_output'
+  ros2_package_name: 'robotnik_msgs'
+  ros2_service_name: 'SetDigitalOutput'

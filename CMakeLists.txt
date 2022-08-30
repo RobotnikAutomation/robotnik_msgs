@@ -51,4 +51,9 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 
 ament_export_dependencies(rosidl_default_runtime)
 
+install(
+  FILES robotnik_msgsmessage_bridge_mapping_rule.yaml
+  DESTINATION share/${PROJECT_NAME}
+)
+
 ament_package()

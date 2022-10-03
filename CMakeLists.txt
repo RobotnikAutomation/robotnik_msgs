@@ -91,6 +91,7 @@ add_service_files(
     get_alarms.srv
     ack_alarm.srv
     set_modbus_register.srv
+    set_modbus_register_bit.srv
     get_modbus_register.srv
     GetBool.srv
     set_CartesianEuler_pose.srv

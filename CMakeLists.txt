@@ -30,6 +30,7 @@ set(msg_files
   "msg/WatchdogStatus.msg")
 
 set(srv_files
+  "srv/SetOdometry.srv"
   "srv/SetDigitalOutput.srv"
   "srv/SetDigitalOutputWithMask.srv"
   "srv/SetMotorStatus.srv"

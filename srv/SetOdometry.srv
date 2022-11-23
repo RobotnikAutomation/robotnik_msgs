@@ -1,0 +1,8 @@
+# Define new odometry position of the robot.
+
+# Estimated actual pose of the robot.
+geometry_msgs/Pose pose
+---
+
+# Return message of the service.
+robotnik_msgs/ReturnMessage ret

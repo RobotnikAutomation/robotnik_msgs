@@ -1,0 +1,6 @@
+Logger query
+int32 max_records
+---
+Logger[] result
+bool success
+string message

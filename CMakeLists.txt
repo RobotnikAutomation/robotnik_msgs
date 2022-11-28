@@ -43,6 +43,7 @@ add_message_files(DIRECTORY msg
     StringArray.msg
     LaserMode.msg
     LaserStatus.msg
+    Logger.msg
     SafetyModuleStatus.msg
     SubState.msg
     QueryAlarm.msg
@@ -94,6 +95,7 @@ add_service_files(
     GetMotorsHeadingOffset.srv
     SetByte.srv
     SetTransform.srv
+    LoggerQuery.srv
 )
 
 add_action_files(

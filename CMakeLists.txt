@@ -68,6 +68,7 @@ add_message_files(DIRECTORY msg
     WatchdogStatusArray.msg
     MotorReferenceValue.msg
     MotorReferenceValueArray.msg
+    RecordStatus.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -112,6 +113,7 @@ add_service_files(
     SetByte.srv
     SetCurrent.srv
     SetTransform.srv
+    Record.srv
 )
 
 add_action_files(

@@ -1,0 +1,9 @@
+string ACTION_RECORD=RECORD
+string ACTION_STOP=STOP
+string ACTION_SAVE=SAVE
+string action
+string file_name
+int32 max_time
+---
+string message
+bool success

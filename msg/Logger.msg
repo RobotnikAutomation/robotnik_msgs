@@ -1,0 +1,10 @@
+string LOG_LEVEL_INFO=Info
+string LOG_LEVEL_WARNING=Warning
+string LOG_LEVEL_ERROR=Error
+string LOG_LEVEL_DEBUG=Debug
+string LOG_LEVEL_USER=User
+string date
+string component
+string tag
+string log_level
+string description

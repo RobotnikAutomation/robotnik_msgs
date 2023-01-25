@@ -50,6 +50,7 @@ add_message_files(DIRECTORY msg
     StringArray.msg
     LaserMode.msg
     LaserStatus.msg
+    Logger.msg
     SafetyModuleStatus.msg
     StringStamped.msg
     SubState.msg
@@ -114,6 +115,7 @@ add_service_files(
     SetByte.srv
     SetCurrent.srv
     SetTransform.srv
+    LoggerQuery.srv
     Record.srv
 )
 

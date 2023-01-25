@@ -25,14 +25,21 @@ add_message_files(DIRECTORY msg
     MotorStatus.msg
     MotorsStatus.msg
     State.msg
+    ArmStatus.msg
     BatteryStatus.msg
     BatteryStatusStamped.msg
+    OdomCalibrationStatus.msg
+    OdomCalibrationStatusStamped.msg
+    OdomManualCalibrationStatus.msg
+    OdomManualCalibrationStatusStamped.msg
     MotorHeadingOffset.msg
     MotorsStatusDifferential.msg
     InverterStatus.msg
     RobotnikMotorsStatus.msg
     ElevatorAction.msg
     ElevatorStatus.msg
+    PantiltStatus.msg
+    PantiltStatusStamped.msg
     Cartesian_Euler_pose.msg
     alarmmonitor.msg
     alarmsmonitor.msg
@@ -45,17 +52,24 @@ add_message_files(DIRECTORY msg
     LaserStatus.msg
     Logger.msg
     SafetyModuleStatus.msg
+    StringStamped.msg
     SubState.msg
     QueryAlarm.msg
     BatteryDockingStatus.msg
     BatteryDockingStatusStamped.msg
     BoolArray.msg
     MotorPID.msg
+    MotorCurrent.msg
     Pose2DArray.msg
     Pose2DStamped.msg
     ReturnMessage.msg
     PresenceSensor.msg
     PresenceSensorArray.msg
+    WatchdogStatus.msg
+    WatchdogStatusArray.msg
+    MotorReferenceValue.msg
+    MotorReferenceValueArray.msg
+    RecordStatus.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -79,6 +93,7 @@ add_service_files(
     get_alarms.srv
     ack_alarm.srv
     set_modbus_register.srv
+    set_modbus_register_bit.srv
     get_modbus_register.srv
     GetBool.srv
     set_CartesianEuler_pose.srv
@@ -93,9 +108,15 @@ add_service_files(
     SetBuzzer.srv
     SetEncoderTurns.srv
     GetMotorsHeadingOffset.srv
+    GetPOI.srv
+    SetString.srv
+    SetInt16.srv
+    GetPTZ.srv
     SetByte.srv
+    SetCurrent.srv
     SetTransform.srv
     LoggerQuery.srv
+    Record.srv
 )
 
 add_action_files(

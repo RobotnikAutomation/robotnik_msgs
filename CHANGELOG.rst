@@ -2,6 +2,45 @@
 Changelog for package robotnik_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+
+2.2.0 (2022-03-08)
+------------------
+- Bump to version 2.2.0 (RomanRobotnik)([25030ed](https://github.com/RobotnikAutomation/robotnik_msgs/commit/25030ed))
+- New msg for base_hw_lib to show current motor references (RomanRobotnik)([8173e15](https://github.com/RobotnikAutomation/robotnik_msgs/commit/8173e15))
+- Merge branch 'base_hw_universal_drives' of https://github.com/RobotnikAutomation/robotnik_msgs into base_hw_universal_drives (RomanRobotnik)([f657d76](https://github.com/RobotnikAutomation/robotnik_msgs/commit/f657d76))
+- New message for General purpose Watchdog Status (RomanRobotnik)([f5ef62b](https://github.com/RobotnikAutomation/robotnik_msgs/commit/f5ef62b))
+
+2.1.0 (2022-02-08)
+------------------
+- Bump to version 2.1.0 (RomanRobotnik)([70b9f5c](https://github.com/RobotnikAutomation/robotnik_msgs/commit/70b9f5c))
+- Merge branch 'master' into base_hw_universal_drives (RomanRobotnik)([162085d](https://github.com/RobotnikAutomation/robotnik_msgs/commit/162085d))
+- Change MotorStatus format and naming - DO/DI as an array - avaragecurrent -> current (RomanRobotnik)([45424db](https://github.com/RobotnikAutomation/robotnik_msgs/commit/45424db))
+- New format for MotorStatus messages - can_id and joint name in MotorStatus - Change the order of fields (RomanRobotnik)([d8f92dd](https://github.com/RobotnikAutomation/robotnik_msgs/commit/d8f92dd))
+- Add SetInt16 srv (jgomezRobotnik)([ca50f11](https://github.com/RobotnikAutomation/robotnik_msgs/commit/ca50f11))
+
+2.0.0 (2021-12-31)
+------------------
+- Bump to version 2.0.0 (RomanRobotnik)([e36d882](https://github.com/RobotnikAutomation/robotnik_msgs/commit/e36d882))
+- Upgrade SafetyModuleMsgs format (RomanRobotnik)([62a4740](https://github.com/RobotnikAutomation/robotnik_msgs/commit/62a4740))
+  - Remove unsused fields and add operation_mode
+- Add ArmStatus msg (jgomezRobotnik)([aedd84a](https://github.com/RobotnikAutomation/robotnik_msgs/commit/aedd84a))
+- Add set motor current msgs (jgomezgadea)([7091c1e](https://github.com/RobotnikAutomation/robotnik_msgs/commit/7091c1e))
+- Bump to version 1.2.0 (RomanRobotnik)([4c1f7af](https://github.com/RobotnikAutomation/robotnik_msgs/commit/4c1f7af))
+
+
+1.2.0 (2021-10-28)
+------------------
+- Add mode parameter to ptz msg and srv (Robert Vasquez Zavaleta)([debb5e4](https://github.com/RobotnikAutomation/robotnik_msgs/commit/debb5e4))
+- Add new defined laser_mode (RomanRobotnik)([d4c1c1d](https://github.com/RobotnikAutomation/robotnik_msgs/commit/d4c1c1d))
+- Add PantiltStatus msg (jgomezRobotnik)([07f3dd1](https://github.com/RobotnikAutomation/robotnik_msgs/commit/07f3dd1))
+- Add SetString service (Robert Vasquez Zavaleta)([252bb38](https://github.com/RobotnikAutomation/robotnik_msgs/commit/252bb38))
+- Add GetPTZ service (Robert Vasquez Zavaleta)([0eef834](https://github.com/RobotnikAutomation/robotnik_msgs/commit/0eef834))
+- Add StringStamped msg (jgomezRobotnik)([678f188](https://github.com/RobotnikAutomation/robotnik_msgs/commit/678f188))
+- Add OdomManualCalibrationStatus msg (jgomezRobotnik)([93899af](https://github.com/RobotnikAutomation/robotnik_msgs/commit/93899af))
+- Add GetPoi service (Álex)([bf3e999](https://github.com/RobotnikAutomation/robotnik_msgs/commit/bf3e999))
+- Update on OdomCalibrationStatus msg (jgomezRobotnik)([1d0e48e](https://github.com/RobotnikAutomation/robotnik_msgs/commit/1d0e48e))
+- Add OdomCalibrationStatus msg (jgomezRobotnik)([e3eb3ee](https://github.com/RobotnikAutomation/robotnik_msgs/commit/e3eb3ee))
+
 1.1.0 (2020-06-15)
 ------------------
 * Add PresenceSensor and PresenceSensorArray msg

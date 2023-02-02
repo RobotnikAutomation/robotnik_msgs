@@ -2,6 +2,23 @@
 Changelog for package robotnik_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.3.0 (2022-02-02)
+------------------
+- Bump to version 2.3.0 (RomanRobotnik)([41871e4](https://github.com/RobotnikAutomation/robotnik_msgs/commit/41871e4))
+- Merge pull request #12 from RobotnikAutomation/feat/update-motor-reference-msg (Román Navarro García)([0c5aeed](https://github.com/RobotnikAutomation/robotnik_msgs/commit/0c5aeed))
+- Add fields spin and offset to MotorReferenceValue msg (RomanRobotnik)([c07f997](https://github.com/RobotnikAutomation/robotnik_msgs/commit/c07f997))
+- Merge pull request #11 from RobotnikAutomation/melodic-devel (Juanma NC)([198c11e](https://github.com/RobotnikAutomation/robotnik_msgs/commit/198c11e))
+- Merge branch 'master' into melodic-devel (Juanma NC)([35c7995](https://github.com/RobotnikAutomation/robotnik_msgs/commit/35c7995))
+- Merge pull request #10 from RobotnikAutomation/feature/record (Román Navarro García)([865dbd9](https://github.com/RobotnikAutomation/robotnik_msgs/commit/865dbd9))
+- Merge pull request #9 from RobotnikAutomation/feature/set_register_bit (Román Navarro García)([e4bd9c3](https://github.com/RobotnikAutomation/robotnik_msgs/commit/e4bd9c3))
+- Update: A service and a message for the recording is added. (Juan Manuel N.C)([d9f870b](https://github.com/RobotnikAutomation/robotnik_msgs/commit/d9f870b))
+- Adds msg and srv to interact with Logger (Álex Arnal)([97d0206](https://github.com/RobotnikAutomation/robotnik_msgs/commit/97d0206))
+- Add set_modbus_register_bit service (alvarovillena)([03b1fcc](https://github.com/RobotnikAutomation/robotnik_msgs/commit/03b1fcc))
+- Merge pull request #5 from RobotnikAutomation/base_hw_universal_drives (Román Navarro García)([5cc6d5e](https://github.com/RobotnikAutomation/robotnik_msgs/commit/5cc6d5e))
+- (tag: melodic-2.2.0, tag: 2.2.0) Update Changelog (RomanRobotnik)([2168df9](https://github.com/RobotnikAutomation/robotnik_msgs/commit/2168df9))
+- Extend battery status (#4) (Álvaro Villena)([476f82c](https://github.com/RobotnikAutomation/robotnik_msgs/commit/476f82c))
+- (tag: melodic-1.0.0, tag: 1.12.0, origin/melodic-master, origin/melodic-devel) 1.12.0 (David)([7cde6e4](https://github.com/RobotnikAutomation/robotnik_msgs/commit/7cde6e4))
+
 
 2.2.0 (2022-03-08)
 ------------------

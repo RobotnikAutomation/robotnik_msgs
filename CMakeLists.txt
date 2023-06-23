@@ -26,6 +26,14 @@ set(msg_files
   "msg/ReturnMessage.msg"
   "msg/State.msg"
   "msg/StringArray.msg"
+  "msg/BatteryStatus.msg"
+  "msg/LaserStatus.msg"
+  "msg/Register.msg"
+  "msg/LaserMode.msg"
+  "msg/RegisterArray.msg"
+  "msg/NamedInputOutput.msg"
+  "msg/NamedInputOutputArray.msg"
+  "msg/SafetyModuleStatus.msg"
   "msg/WatchdogStatusArray.msg"
   "msg/WatchdogStatus.msg")
 
@@ -35,6 +43,11 @@ set(srv_files
   "srv/SetDigitalOutputWithMask.srv"
   "srv/SetMotorStatus.srv"
   "srv/SetMotorPID.srv"
+  "srv/SetModbusRegister.srv"
+  "srv/SetModbusRegisterBit.srv"
+  "srv/GetModbusRegister.srv"
+  "srv/SetNamedDigitalOutput.srv"
+  "srv/SetLaserMode.srv"
   "srv/SetString.srv"
   "srv/SetCurrent.srv")
 

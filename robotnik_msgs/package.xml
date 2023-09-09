@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<?xml-model
+  href="http://download.ros.org/schema/package_format3.xsd"
+  schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>robotnik_msgs</name>
+  <version>2.2.0</version>
+  <description>
+    This package contains the messages and services used by Robotnik's robots
+  </description>
+
+  <maintainer email="rmartin@robotnik.es">Rafael Martin</maintainer>
+  <maintainer email="jgomez@robotnik.es">Jose Gómez</maintainer>
+  <maintainer email="asoriano@robotnik.es">Angel Soriano</maintainer>
+  <maintainer email="avillena@robotnik.es">Álvaro Villena</maintainer>
+  <maintainer email="dredo@robotnik.es">David Redó</maintainer>
+  <maintainer email="aarnal@robotnik.es">Alejandro Arnal</maintainer>
+  <maintainer email="mbosch@robotnik.es">Marc Bosch</maintainer>
+  <maintainer email="rnavarro@robotnik.es">Román Navarro</maintainer>
+
+  <license>BSD</license>
+
+  <author email="rnavarro@robotnik.es">Román Navarro</author>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>rosidl_default_generators</buildtool_depend>
+
+  <depend>action_msgs</depend>
+
+  <exec_depend>rosidl_default_runtime</exec_depend>
+
+  <test_depend>ament_lint_common</test_depend>
+
+  <member_of_group>rosidl_interface_packages</member_of_group>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+    <ros1_bridge mapping_rules="robotnik_msgsmessage_bridge_mapping_rule.yaml" />
+  </export>
+</package>

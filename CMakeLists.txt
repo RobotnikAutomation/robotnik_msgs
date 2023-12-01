@@ -70,6 +70,7 @@ add_message_files(DIRECTORY msg
     MotorReferenceValue.msg
     MotorReferenceValueArray.msg
     RecordStatus.msg
+    MotorInfo.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -117,6 +118,7 @@ add_service_files(
     SetTransform.srv
     LoggerQuery.srv
     Record.srv
+    GetMotorsInfo.srv
 )
 
 add_action_files(

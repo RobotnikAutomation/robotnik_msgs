@@ -3,6 +3,7 @@ float32 disk_usage
 float32 memory_capacity
 float32 memory_usage
 float32 cpu_usage
+float32[] core_usage
 float32 cpu_temperature
 float32[] core_temperatures
 Header header

@@ -26,6 +26,7 @@ add_message_files(DIRECTORY msg
     MotorsStatus.msg
     State.msg
     ArmStatus.msg
+    AudioPlayer.msg
     BatteryStatus.msg
     BatteryStatusStamped.msg
     OdomCalibrationStatus.msg
@@ -70,6 +71,7 @@ add_message_files(DIRECTORY msg
     MotorReferenceValue.msg
     MotorReferenceValueArray.msg
     RecordStatus.msg
+    SimpleSystemStatus.msg
 )
 
 ## Generate services in the 'srv' folder

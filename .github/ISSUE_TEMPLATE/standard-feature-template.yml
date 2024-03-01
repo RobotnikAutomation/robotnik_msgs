@@ -1,0 +1,27 @@
+name: Standard Feature Template
+description: This template is intended to be used in features issues
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this feature report!
+  - type: textarea
+    id: goal
+    attributes:
+      label: What do we want to achieve?
+      description: Explain the goal of the new feature
+    validations:
+      required: true
+  - type: textarea
+    id: plan
+    attributes:
+      label: How do we plan to do it?
+      description: Tell us the plan we're going to follow
+    validations:
+      required: true
+  - type: textarea
+    id: test
+    attributes:
+      label: How can it be tested?

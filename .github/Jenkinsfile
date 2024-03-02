@@ -1,5 +1,3 @@
-rosPipeline(
-  rosdistro: ["melodic", "noetic"],
+buildPackage(
   upstreamProjects: '',
-  upload: true
 )

@@ -1,0 +1,3 @@
+float64 init_value
+float64 end_value
+float64 step_size

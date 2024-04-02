@@ -72,6 +72,7 @@ add_message_files(DIRECTORY msg
     MotorReferenceValueArray.msg
     RecordStatus.msg
     SimpleSystemStatus.msg
+    Interval.msg
 )
 
 ## Generate services in the 'srv' folder

@@ -1,0 +1,5 @@
+int8 output
+float32 duration
+bool high
+---
+bool ret 

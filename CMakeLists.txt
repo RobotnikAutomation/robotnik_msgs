@@ -85,6 +85,7 @@ add_service_files(
     set_ptz.srv
     get_mode.srv
     set_digital_output.srv
+    set_digital_pulse_output.srv
     set_odometry.srv
     set_height.srv
     enable_disable.srv

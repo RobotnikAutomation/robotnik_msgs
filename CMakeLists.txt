@@ -116,6 +116,7 @@ add_service_files(
     SetString.srv
     SetInt16.srv
     GetPTZ.srv
+    GetStringList.srv
     SetByte.srv
     SetCurrent.srv
     SetTransform.srv

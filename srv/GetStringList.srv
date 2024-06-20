@@ -1,3 +1,4 @@
+string data
 ---
 string[] strings
 robotnik_msgs/ReturnMessage ret

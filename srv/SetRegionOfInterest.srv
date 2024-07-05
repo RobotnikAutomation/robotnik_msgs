@@ -1,0 +1,4 @@
+sensor_msgs/RegionOfInterest roi
+---
+bool success
+string message

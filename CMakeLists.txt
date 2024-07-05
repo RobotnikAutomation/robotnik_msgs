@@ -4,7 +4,7 @@ project(robotnik_msgs)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED COMPONENTS actionlib_msgs std_msgs geometry_msgs message_generation)
+find_package(catkin REQUIRED COMPONENTS actionlib_msgs std_msgs geometry_msgs sensor_msgs message_generation)
 
 
 #######################################
@@ -123,6 +123,7 @@ add_service_files(
     SetTransform.srv
     LoggerQuery.srv
     Record.srv
+    SetRegionOfInterest.srv
 )
 
 add_action_files(
@@ -137,6 +138,7 @@ DEPENDENCIES
    actionlib_msgs
    std_msgs  # Or other packages containing msgs
    geometry_msgs
+   sensor_msgs
 )
 
 catkin_package(CATKIN_DEPENDS
@@ -144,4 +146,5 @@ catkin_package(CATKIN_DEPENDS
   message_runtime
   std_msgs
   geometry_msgs
+  sensor_msgs
 )

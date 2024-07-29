@@ -83,6 +83,7 @@ add_service_files(
     set_analog_output.srv
     set_mode.srv
     set_ptz.srv
+    set_ptz_home.srv
     get_mode.srv
     set_digital_output.srv
     set_digital_pulse_output.srv

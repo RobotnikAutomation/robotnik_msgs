@@ -116,6 +116,8 @@ add_service_files(
     GetPOI.srv
     SetString.srv
     SetStringList.srv
+    SetFloat32.srv
+    SetFloat64.srv
     SetInt16.srv
     GetPTZ.srv
     GetStringList.srv

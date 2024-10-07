@@ -49,7 +49,9 @@ set(srv_files
   "srv/SetNamedDigitalOutput.srv"
   "srv/SetLaserMode.srv"
   "srv/SetString.srv"
-  "srv/SetCurrent.srv")
+  "srv/SetCurrent.srv"
+  "srv/SetFloat64.srv"
+  "srv/GetFloat64.srv")
 
 set(action_files)
 

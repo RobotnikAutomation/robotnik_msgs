@@ -73,6 +73,7 @@ add_message_files(DIRECTORY msg
     RecordStatus.msg
     SimpleSystemStatus.msg
     Interval.msg
+    CameraParameters.msg
 )
 
 ## Generate services in the 'srv' folder

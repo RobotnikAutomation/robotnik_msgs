@@ -108,6 +108,7 @@ add_service_files(
     ResetFromSubState.srv
     QueryAlarms.srv
     SetNamedDigitalOutput.srv
+    SetPotentiometerVoltage.srv
     InsertTask.srv
     SetMotorPID.srv
     SetMotorMode.srv

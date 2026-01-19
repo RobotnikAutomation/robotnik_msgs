@@ -6,9 +6,4 @@ float32 tilt
 float32 zoom
 # Flag for relative  movements
 bool relative
-# Position or speed mode
-string mode
 
-# Enum for mode 
-string POSITION=position
-string VELOCITY=velocity

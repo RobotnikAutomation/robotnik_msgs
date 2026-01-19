@@ -1,6 +1,6 @@
-robotnik_msgs/ElevatorAction action
+ElevatorAction action
 ---
 bool result
-robotnik_msgs/ElevatorStatus status
+ElevatorStatus status
 ---
-robotnik_msgs/ElevatorStatus status
+ElevatorStatus status

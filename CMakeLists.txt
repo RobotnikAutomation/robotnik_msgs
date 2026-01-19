@@ -4,7 +4,7 @@ project(robotnik_msgs)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED COMPONENTS actionlib_msgs std_msgs geometry_msgs sensor_msgs message_generation)
+find_package(catkin REQUIRED COMPONENTS actionlib_msgs std_msgs message_generation)
 
 
 #######################################
@@ -25,55 +25,21 @@ add_message_files(DIRECTORY msg
     MotorStatus.msg
     MotorsStatus.msg
     State.msg
-    ArmStatus.msg
-    AudioPlayer.msg
     BatteryStatus.msg
-    BatteryStatusStamped.msg
-    OdomCalibrationStatus.msg
-    OdomCalibrationStatusStamped.msg
-    OdomManualCalibrationStatus.msg
-    OdomManualCalibrationStatusStamped.msg
-    MotorHeadingOffset.msg
     MotorsStatusDifferential.msg
     InverterStatus.msg
     RobotnikMotorsStatus.msg
     ElevatorAction.msg
     ElevatorStatus.msg
-    PantiltStatus.msg
-    PantiltStatusStamped.msg
     Cartesian_Euler_pose.msg
     alarmmonitor.msg
     alarmsmonitor.msg
     named_inputs_outputs.msg
     named_input_output.msg
-    Register.msg
-    Registers.msg
     StringArray.msg
     LaserMode.msg
     LaserStatus.msg
-    Logger.msg
     SafetyModuleStatus.msg
-    StringStamped.msg
-    SubState.msg
-    QueryAlarm.msg
-    BatteryDockingStatus.msg
-    BatteryDockingStatusStamped.msg
-    BoolArray.msg
-    MotorPID.msg
-    MotorCurrent.msg
-    Pose2DArray.msg
-    Pose2DStamped.msg
-    ReturnMessage.msg
-    PresenceSensor.msg
-    PresenceSensorArray.msg
-    WatchdogStatus.msg
-    WatchdogStatusArray.msg
-    MotorReferenceValue.msg
-    MotorReferenceValueArray.msg
-    RecordStatus.msg
-    SimpleSystemStatus.msg
-    Interval.msg
-    CameraParameters.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -84,10 +50,8 @@ add_service_files(
     set_analog_output.srv
     set_mode.srv
     set_ptz.srv
-    set_ptz_home.srv
     get_mode.srv
     set_digital_output.srv
-    set_digital_pulse_output.srv
     set_odometry.srv
     set_height.srv
     enable_disable.srv
@@ -99,35 +63,12 @@ add_service_files(
     get_alarms.srv
     ack_alarm.srv
     set_modbus_register.srv
-    set_modbus_register_bit.srv
     get_modbus_register.srv
     GetBool.srv
     set_CartesianEuler_pose.srv
     set_named_digital_output.srv
     SetLaserMode.srv
-    ResetFromSubState.srv
-    QueryAlarms.srv
-    SetNamedDigitalOutput.srv
-    InsertTask.srv
-    SetMotorPID.srv
-    SetMotorMode.srv
-    SetBuzzer.srv
-    SetEncoderTurns.srv
-    GetMotorsHeadingOffset.srv
-    GetPOI.srv
-    SetString.srv
-    SetStringList.srv
-    SetFloat32.srv
-    SetFloat64.srv
-    SetInt16.srv
-    GetPTZ.srv
-    GetStringList.srv
-    SetByte.srv
-    SetCurrent.srv
-    SetTransform.srv
-    LoggerQuery.srv
-    Record.srv
-    SetRegionOfInterest.srv
+
 )
 
 add_action_files(
@@ -141,14 +82,12 @@ generate_messages(
 DEPENDENCIES
    actionlib_msgs
    std_msgs  # Or other packages containing msgs
-   geometry_msgs
-   sensor_msgs
 )
 
 catkin_package(CATKIN_DEPENDS
   actionlib_msgs
   message_runtime
   std_msgs
-  geometry_msgs
-  sensor_msgs
 )
+
+

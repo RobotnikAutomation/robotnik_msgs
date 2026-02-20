@@ -2,3 +2,4 @@ int8 output
 bool value
 ---
 bool ret 
+std_msgs/String errorMessage

@@ -8,3 +8,4 @@ float32 z
 float32 orientation
 ---
 bool ret 
+std_msgs/String errorMessage

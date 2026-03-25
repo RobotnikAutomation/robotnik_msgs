@@ -12,3 +12,4 @@ string operation_mode
 	
 bool contact_relay_status	# shows if there's contact with the charger
 bool charger_relay_status   # shows if the relay for the charge is active or not
+bool charger_enabled_status # shows if the charger is enabled or not. This is the one that should be used to know if the robot is able to charge phisically or not

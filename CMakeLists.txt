@@ -98,6 +98,7 @@ add_service_files(
     SetElevator.srv
     get_alarms.srv
     ack_alarm.srv
+    GetAxisDeviceInfo.srv
     set_modbus_register.srv
     set_modbus_register_bit.srv
     get_modbus_register.srv

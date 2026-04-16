@@ -127,6 +127,8 @@ add_service_files(
     GetStringList.srv
     SetByte.srv
     SetCurrent.srv
+    SetCameraFocus.srv
+    SetCameraIris.srv
     SetTransform.srv
     LoggerQuery.srv
     Record.srv

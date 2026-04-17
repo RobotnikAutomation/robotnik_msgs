@@ -74,6 +74,7 @@ add_message_files(DIRECTORY msg
     SimpleSystemStatus.msg
     Interval.msg
     CameraParameters.msg
+    ImageSettings.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -98,6 +99,7 @@ add_service_files(
     SetElevator.srv
     get_alarms.srv
     ack_alarm.srv
+    GetAxisDeviceInfo.srv
     set_modbus_register.srv
     set_modbus_register_bit.srv
     get_modbus_register.srv
@@ -121,9 +123,12 @@ add_service_files(
     SetFloat64.srv
     SetInt16.srv
     GetPTZ.srv
+    GetImageSettings.srv
     GetStringList.srv
     SetByte.srv
     SetCurrent.srv
+    SetCameraFocus.srv
+    SetCameraIris.srv
     SetTransform.srv
     LoggerQuery.srv
     Record.srv

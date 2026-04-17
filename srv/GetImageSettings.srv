@@ -1,0 +1,4 @@
+---
+bool success
+string message
+robotnik_msgs/ImageSettings image_settings

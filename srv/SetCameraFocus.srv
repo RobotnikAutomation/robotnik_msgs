@@ -1,0 +1,5 @@
+float32 value
+bool auto
+---
+bool ret
+string message

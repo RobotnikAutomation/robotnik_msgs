@@ -129,6 +129,7 @@ add_service_files(
     SetCurrent.srv
     SetCameraFocus.srv
     SetCameraIris.srv
+    SetAutoTracking.srv
     SetTransform.srv
     LoggerQuery.srv
     Record.srv

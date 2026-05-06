@@ -14,6 +14,8 @@ find_package(catkin REQUIRED COMPONENTS actionlib_msgs std_msgs geometry_msgs se
 ## Generate messages in the 'msg' folder
 add_message_files(DIRECTORY msg
     FILES
+    AxisMetadataDetection.msg
+    AxisMetadataDetectionArray.msg
     encoders.msg
     inputs_outputs.msg
     ptz.msg
@@ -81,6 +83,7 @@ add_message_files(DIRECTORY msg
 add_service_files(
     DIRECTORY srv
     FILES
+    SetDetectionFilter.srv
     get_digital_input.srv
     set_analog_output.srv
     set_mode.srv

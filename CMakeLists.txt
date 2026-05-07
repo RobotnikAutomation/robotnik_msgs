@@ -83,7 +83,6 @@ add_message_files(DIRECTORY msg
 add_service_files(
     DIRECTORY srv
     FILES
-    SetDetectionFilter.srv
     get_digital_input.srv
     set_analog_output.srv
     set_mode.srv
